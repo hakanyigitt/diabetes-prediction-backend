@@ -20,4 +20,6 @@ public final class ExceptionMessages {
 
     public static final String ROLE_NOT_FOUND = "Role Not Found !";
 
+    public static final String ADVICE_NOT_FOUND = "Advice Not Found !";
+
 }

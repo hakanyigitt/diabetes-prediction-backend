@@ -23,4 +23,6 @@ public final class SwaggerMessages {
 
     public static final String UNSUCCESSFUL_SIGNUP = "Unsuccessful sign up.";
 
+    public static final String SUCCESSFUL_CREATE_ADVICE = "Successful create advice.";
+
 }

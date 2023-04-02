@@ -27,4 +27,6 @@ public final class SwaggerMessages {
 
     public static final String SUCCESSFUL_CREATE_PETITION = "Successful create petition.";
 
+    public static final String SUCCESSFUL_CREATE_QUESTON = "Successful create question.";
+
 }

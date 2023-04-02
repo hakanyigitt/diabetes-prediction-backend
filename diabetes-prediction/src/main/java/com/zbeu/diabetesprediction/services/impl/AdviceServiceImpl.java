@@ -9,7 +9,9 @@ import com.zbeu.diabetesprediction.exception.CustomException;
 import com.zbeu.diabetesprediction.mapper.AdviceMapper;
 import com.zbeu.diabetesprediction.repos.AdviceRepository;
 import com.zbeu.diabetesprediction.services.AdviceService;
+
 import lombok.RequiredArgsConstructor;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 

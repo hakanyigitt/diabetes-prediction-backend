@@ -11,7 +11,9 @@ import com.zbeu.diabetesprediction.exception.CustomException;
 import com.zbeu.diabetesprediction.repos.RoleRepository;
 import com.zbeu.diabetesprediction.repos.UserRepository;
 import com.zbeu.diabetesprediction.services.UserService;
+
 import lombok.RequiredArgsConstructor;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

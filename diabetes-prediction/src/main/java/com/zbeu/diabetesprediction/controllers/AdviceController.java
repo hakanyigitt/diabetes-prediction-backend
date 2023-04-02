@@ -39,7 +39,7 @@ public class AdviceController {
         return ResponseEntity.ok(adviceService.getAll());
     }
 
-    @ApiOperation(value = "Get By Id")
+    @ApiOperation(value = "Get by id")
     @GetMapping("getById")
     public ResponseEntity<AdviceResponse> getById(@RequestParam Long id){
         return ResponseEntity.ok(adviceService.getById(id));
@@ -72,4 +72,5 @@ public class AdviceController {
         adviceService.update(id, adviceUpdateRequest);
         return ResponseEntity.ok(new GenericResponse(GenericMessages.SUCCESSFULLY_UPDATED));
     }
+
 }

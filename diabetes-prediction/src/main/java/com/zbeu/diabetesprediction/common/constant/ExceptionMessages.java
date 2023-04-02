@@ -22,4 +22,6 @@ public final class ExceptionMessages {
 
     public static final String ADVICE_NOT_FOUND = "Advice Not Found !";
 
+    public static final String PETITION_NOT_FOUND = "Petition Not Found !";
+
 }

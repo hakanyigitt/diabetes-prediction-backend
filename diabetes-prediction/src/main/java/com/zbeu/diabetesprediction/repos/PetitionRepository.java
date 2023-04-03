@@ -1,6 +1,6 @@
 package com.zbeu.diabetesprediction.repos;
 
-import com.zbeu.diabetesprediction.entities.Petition;
+import com.zbeu.diabetesprediction.model.entity.Petition;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

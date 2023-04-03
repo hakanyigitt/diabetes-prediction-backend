@@ -29,4 +29,6 @@ public final class SwaggerMessages {
 
     public static final String SUCCESSFUL_CREATE_QUESTON = "Successful create question.";
 
+    public static final String SUCCESSFUL_CREATE_BLOOD_SUGAR = "Successful create blood sugar.";
+
 }

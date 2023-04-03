@@ -1,7 +1,7 @@
 package com.zbeu.diabetesprediction.configuration.security;
 
 import com.zbeu.diabetesprediction.common.constant.ExceptionMessages;
-import com.zbeu.diabetesprediction.entities.Role;
+import com.zbeu.diabetesprediction.model.entity.Role;
 import com.zbeu.diabetesprediction.exception.CustomException;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtException;

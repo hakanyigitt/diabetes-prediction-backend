@@ -3,7 +3,7 @@ package com.zbeu.diabetesprediction.services.impl;
 import com.zbeu.diabetesprediction.common.constant.ExceptionMessages;
 import com.zbeu.diabetesprediction.dto.request.QuestionRequest;
 import com.zbeu.diabetesprediction.dto.response.QuestionResponse;
-import com.zbeu.diabetesprediction.entities.Question;
+import com.zbeu.diabetesprediction.model.entity.Question;
 import com.zbeu.diabetesprediction.exception.CustomException;
 import com.zbeu.diabetesprediction.mapper.QuestionMapper;
 import com.zbeu.diabetesprediction.repos.QuestionRepository;

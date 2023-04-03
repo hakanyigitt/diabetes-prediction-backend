@@ -1,22 +1,19 @@
 package com.zbeu.diabetesprediction.repos;
 
+import com.zbeu.diabetesprediction.model.entity.BloodSugar;
 import com.zbeu.diabetesprediction.model.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.Optional;
+import java.util.List;
 
 /**
  * @author HAKAN YIGIT
  */
 
 @Repository
-public interface UserRepository extends JpaRepository<User,Long> {
+public interface BloodSugarRepository extends JpaRepository<BloodSugar, Long> {
 
-    Optional<User> findByUsername(String username);
-
-    boolean existsUserByUsername(String username);
-
-    boolean existsUserByEmail(String email);
+    List<BloodSugar> findAllByUser(User user);
 
 }

@@ -1,7 +1,7 @@
 package com.zbeu.diabetesprediction.mapper;
 
 import com.zbeu.diabetesprediction.dto.response.QuestionResponse;
-import com.zbeu.diabetesprediction.entities.Question;
+import com.zbeu.diabetesprediction.model.entity.Question;
 
 import lombok.RequiredArgsConstructor;
 

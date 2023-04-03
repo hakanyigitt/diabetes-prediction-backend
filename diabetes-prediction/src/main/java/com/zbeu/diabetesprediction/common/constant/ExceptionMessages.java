@@ -26,4 +26,6 @@ public final class ExceptionMessages {
 
     public static final String QUESTION_NOT_FOUND = "Question Not Found !";
 
+    public static final String BLOOD_SUGAR_NOT_FOUND = "Blood Sugar Not Found !";
+
 }

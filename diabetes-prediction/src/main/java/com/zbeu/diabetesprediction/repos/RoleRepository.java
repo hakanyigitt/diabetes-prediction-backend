@@ -1,6 +1,6 @@
 package com.zbeu.diabetesprediction.repos;
 
-import com.zbeu.diabetesprediction.entities.Role;
+import com.zbeu.diabetesprediction.model.entity.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

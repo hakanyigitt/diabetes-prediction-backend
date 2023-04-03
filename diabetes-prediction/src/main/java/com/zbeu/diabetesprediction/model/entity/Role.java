@@ -1,4 +1,4 @@
-package com.zbeu.diabetesprediction.entities;
+package com.zbeu.diabetesprediction.model.entity;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

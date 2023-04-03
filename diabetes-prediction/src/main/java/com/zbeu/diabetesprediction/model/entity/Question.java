@@ -1,4 +1,4 @@
-package com.zbeu.diabetesprediction.entities;
+package com.zbeu.diabetesprediction.model.entity;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,21 +12,18 @@ import javax.persistence.*;
 @Data
 @NoArgsConstructor
 @Entity
-@Table(name = "petitions")
-public class Petition {
+@Table(name = "questions")
+public class Question {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Lob
+    @Column(name = "question", nullable = false)
+    private String question;
+
     @Column(name = "description")
     private String description;
-
-    @Column(name = "email", nullable = false)
-    private String email;
-
-    @Column(name = "status")
-    private boolean status;
 
 }

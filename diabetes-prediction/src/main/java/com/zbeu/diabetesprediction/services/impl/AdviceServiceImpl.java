@@ -4,7 +4,7 @@ import com.zbeu.diabetesprediction.common.constant.ExceptionMessages;
 import com.zbeu.diabetesprediction.dto.request.AdviceCreateRequest;
 import com.zbeu.diabetesprediction.dto.request.AdviceUpdateRequest;
 import com.zbeu.diabetesprediction.dto.response.AdviceResponse;
-import com.zbeu.diabetesprediction.entities.Advice;
+import com.zbeu.diabetesprediction.model.entity.Advice;
 import com.zbeu.diabetesprediction.exception.CustomException;
 import com.zbeu.diabetesprediction.mapper.AdviceMapper;
 import com.zbeu.diabetesprediction.repos.AdviceRepository;

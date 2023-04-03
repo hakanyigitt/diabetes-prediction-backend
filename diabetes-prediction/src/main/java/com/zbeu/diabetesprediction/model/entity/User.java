@@ -1,4 +1,4 @@
-package com.zbeu.diabetesprediction.entities;
+package com.zbeu.diabetesprediction.model.entity;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -45,6 +45,9 @@ public class User implements UserDetails {
     @ManyToOne
     @JoinColumn(name = "role_id", nullable = false)
     private Role role;
+
+    @OneToMany(mappedBy = "user")
+    private List<BloodSugar> bloodSugars;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

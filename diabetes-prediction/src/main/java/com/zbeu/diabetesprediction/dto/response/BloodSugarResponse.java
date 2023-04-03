@@ -21,6 +21,9 @@ import java.time.LocalDate;
 @ApiModel(value = "Blood Sugar Response")
 public class BloodSugarResponse {
 
+    @ApiModelProperty(value = "Id")
+    private Long id;
+
     @ApiModelProperty(value = "Value")
     private float value;
 

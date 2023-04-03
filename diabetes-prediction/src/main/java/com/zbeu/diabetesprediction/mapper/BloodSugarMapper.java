@@ -19,6 +19,7 @@ public class BloodSugarMapper {
 
     public BloodSugarResponse BloodSugarToBloodSugarResponse(BloodSugar bloodSugar){
         final var bloodSugarResponse = new BloodSugarResponse();
+        bloodSugarResponse.setId(bloodSugar.getId());
         bloodSugarResponse.setValue(bloodSugar.getValue());
         bloodSugarResponse.setDate(bloodSugar.getDate());
         bloodSugarResponse.setTimeType(bloodSugar.getTimeType());

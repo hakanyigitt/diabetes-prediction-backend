@@ -32,7 +32,7 @@ public class AdviceServiceImpl implements AdviceService {
     public List<AdviceResponse> getAll() {
         return adviceRepository.findAll()
                 .stream()
-                .map(advice -> new AdviceResponse(advice.getTitle(), advice.getDescription()))
+                .map(advice -> new AdviceResponse(advice.getId(), advice.getTitle(), advice.getDescription()))
                 .toList();
     }
 

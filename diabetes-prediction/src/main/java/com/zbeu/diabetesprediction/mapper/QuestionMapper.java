@@ -17,6 +17,7 @@ public class QuestionMapper {
 
     public QuestionResponse QuestionToQuestionResponse(Question question){
         final var questionResponse = new QuestionResponse();
+        questionResponse.setId(question.getId());
         questionResponse.setQuestion(question.getQuestion());
         questionResponse.setDescription(question.getDescription());
         return questionResponse;

@@ -39,7 +39,7 @@ public class BloodSugarServiceImpl implements BloodSugarService {
         final User user = findUserByUsername(username);
         return bloodSugarRepository.findAllByUser(user)
                 .stream()
-                .map(bloodSugar -> new BloodSugarResponse(bloodSugar.getValue(), bloodSugar.getDate(), bloodSugar.getTimeType()))
+                .map(bloodSugar -> new BloodSugarResponse(bloodSugar.getId(), bloodSugar.getValue(), bloodSugar.getDate(), bloodSugar.getTimeType()))
                 .toList();
     }
 

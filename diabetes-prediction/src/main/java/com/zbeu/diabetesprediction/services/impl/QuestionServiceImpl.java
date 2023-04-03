@@ -32,7 +32,7 @@ public class QuestionServiceImpl implements QuestionService {
     public List<QuestionResponse> getAll() {
         return questionRepository.findAll()
                 .stream()
-                .map(question -> new QuestionResponse(question.getQuestion(), question.getDescription()))
+                .map(question -> new QuestionResponse(question.getId(), question.getQuestion(), question.getDescription()))
                 .toList();
     }
 

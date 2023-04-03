@@ -17,6 +17,7 @@ public class AdviceMapper {
 
     public AdviceResponse AdviceToAdviceResponse(Advice advice){
         final var adviceResponse = new AdviceResponse();
+        adviceResponse.setId(advice.getId());
         adviceResponse.setTitle(advice.getTitle());
         adviceResponse.setDescription(advice.getDescription());
         return adviceResponse;

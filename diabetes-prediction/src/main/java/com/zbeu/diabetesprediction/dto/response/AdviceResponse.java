@@ -16,6 +16,9 @@ import lombok.NoArgsConstructor;
 @ApiModel(value = "Advice Response")
 public final class AdviceResponse {
 
+    @ApiModelProperty(value = "Id")
+    private Long id;
+
     @ApiModelProperty(value = "Title")
     private String title;
 

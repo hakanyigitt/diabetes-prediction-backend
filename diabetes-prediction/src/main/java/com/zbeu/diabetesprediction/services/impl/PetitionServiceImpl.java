@@ -30,7 +30,7 @@ public class PetitionServiceImpl implements PetitionService {
     public List<PetitionResponse> getAll() {
         return petitionRepository.findAll()
                 .stream()
-                .map(petition -> new PetitionResponse(petition.getDescription(), petition.getEmail()))
+                .map(petition -> new PetitionResponse(petition.getId(), petition.getDescription(), petition.getEmail()))
                 .toList();
     }
 
@@ -39,7 +39,7 @@ public class PetitionServiceImpl implements PetitionService {
     public List<PetitionResponse> getAllByStatus(boolean status) {
         return petitionRepository.findAllByStatus(status)
                 .stream()
-                .map(petition -> new PetitionResponse(petition.getDescription(), petition.getEmail()))
+                .map(petition -> new PetitionResponse(petition.getId(), petition.getDescription(), petition.getEmail()))
                 .toList();
     }
 

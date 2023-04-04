@@ -9,5 +9,5 @@ EXPOSE 8080
 VOLUME /tmp
 #WORKDIR /hr
 #COPY /target/fmss-hr.jar app.jar
-ADD diabetes-prediction/target/app.jar app.jar
+ADD diabetes-prediction/target/diabetes-prediction.jar diabetes-prediction.jar
 ENTRYPOINT ["java", "-jar", "/app.jar"]

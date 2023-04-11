@@ -39,7 +39,7 @@ public class QuestionServiceImpl implements QuestionService {
     @Override
     public QuestionResponse getQuestionById(Long id) {
         final var  question = findQuestionById(id);
-        final QuestionResponse questionResponse = questionMapper.QuestionToQuestionResponse(question);
+        final QuestionResponse questionResponse = questionMapper.questionToQuestionResponse(question);
         return questionResponse;
     }
 

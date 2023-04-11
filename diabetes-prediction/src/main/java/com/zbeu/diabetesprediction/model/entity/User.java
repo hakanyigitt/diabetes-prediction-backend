@@ -49,6 +49,9 @@ public class User implements UserDetails {
     @OneToMany(mappedBy = "user")
     private List<BloodSugar> bloodSugars;
 
+    @OneToMany(mappedBy = "user")
+    private List<Answer> answers;
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         List<SimpleGrantedAuthority> authorities = new ArrayList<>();
@@ -75,4 +78,5 @@ public class User implements UserDetails {
     public boolean isEnabled() {
         return true;
     }
+
 }

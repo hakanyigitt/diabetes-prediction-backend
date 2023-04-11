@@ -18,6 +18,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 /**
@@ -50,7 +51,7 @@ public class QuestionController {
     @PostMapping("create")
     @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<?> create(@ApiParam(value = "Question Request", required = true)
-                                    @RequestBody QuestionRequest questionRequest){
+                                    @Valid @RequestBody QuestionRequest questionRequest){
         questionService.create(questionRequest);
         return ResponseEntity.ok(new GenericResponse(GenericMessages.SUCCESSFULLY_CREATED));
     }

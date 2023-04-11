@@ -39,7 +39,7 @@ public class AdviceServiceImpl implements AdviceService {
     @Override
     public AdviceResponse getById(Long id) {
         final var advice = findAdviceById(id);
-        final AdviceResponse adviceResponse = adviceMapper.AdviceToAdviceResponse(advice);
+        final AdviceResponse adviceResponse = adviceMapper.adviceToAdviceResponse(advice);
         return adviceResponse;
     }
 

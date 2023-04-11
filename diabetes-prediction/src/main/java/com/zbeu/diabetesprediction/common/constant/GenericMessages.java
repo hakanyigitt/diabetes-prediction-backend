@@ -16,7 +16,6 @@ public final class GenericMessages {
 
     public static final String SUCCESSFULLY_CREATED = "Successfully Created.";
     public static final String SUCCESSFULLY_DELETED = "Successfully Deleted";
-
     public static final String SUCCESSFULLY_UPDATED = "Successfully Updated";
 
 }

@@ -1,6 +1,7 @@
 package com.zbeu.diabetesprediction.configuration.security;
 
 import lombok.RequiredArgsConstructor;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -40,6 +41,7 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatchers("/petitions/**").hasRole("ADMIN")
                 .antMatchers("/questions/**").permitAll()
                 .antMatchers("/bloodSugars/**").hasRole("USER")
+                .antMatchers("/answers/**").permitAll()
                 .anyRequest().authenticated();
 
         http.apply(new JwtTokenFilterConfigurer(jwtTokenProvider));

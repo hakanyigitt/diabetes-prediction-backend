@@ -7,6 +7,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.validation.constraints.NotBlank;
+
 /**
  * @author HAKAN YIGIT
  */
@@ -17,6 +19,8 @@ import lombok.NoArgsConstructor;
 @ApiModel(value = "Question Request")
 public final class QuestionRequest {
 
+
+    @NotBlank(message = "{backend.constraints.question.NotBlank.message}")
     @ApiModelProperty(value = "Question")
     private String question;
 

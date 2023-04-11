@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class AdviceMapper {
 
-    public AdviceResponse AdviceToAdviceResponse(Advice advice){
+    public AdviceResponse adviceToAdviceResponse(Advice advice){
         final var adviceResponse = new AdviceResponse();
         adviceResponse.setId(advice.getId());
         adviceResponse.setTitle(advice.getTitle());

@@ -14,16 +14,19 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@ApiModel(value = "Petition Response")
-public final class PetitionResponse {
+@ApiModel(value = "Answer Response")
+public final class AnswerResponse {
 
     @ApiModelProperty(value = "Id")
     private Long id;
 
-    @ApiModelProperty(value = "Description")
-    private String description;
+    @ApiModelProperty(value = "Full name")
+    private String fullName;
 
-    @ApiModelProperty(value = "Email")
-    private String email;
+    @ApiModelProperty(value = "Title")
+    private String question;
+
+    @ApiModelProperty(value = "Reply")
+    private String reply;
 
 }

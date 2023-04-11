@@ -17,7 +17,7 @@ import java.time.LocalDate;
 @Component
 public class BloodSugarMapper {
 
-    public BloodSugarResponse BloodSugarToBloodSugarResponse(BloodSugar bloodSugar){
+    public BloodSugarResponse bloodSugarToBloodSugarResponse(BloodSugar bloodSugar){
         final var bloodSugarResponse = new BloodSugarResponse();
         bloodSugarResponse.setId(bloodSugar.getId());
         bloodSugarResponse.setValue(bloodSugar.getValue());

@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class QuestionMapper {
 
-    public QuestionResponse QuestionToQuestionResponse(Question question){
+    public QuestionResponse questionToQuestionResponse(Question question){
         final var questionResponse = new QuestionResponse();
         questionResponse.setId(question.getId());
         questionResponse.setQuestion(question.getQuestion());

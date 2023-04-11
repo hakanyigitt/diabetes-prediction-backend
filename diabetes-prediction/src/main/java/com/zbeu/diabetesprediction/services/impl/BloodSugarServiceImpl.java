@@ -46,7 +46,7 @@ public class BloodSugarServiceImpl implements BloodSugarService {
     @Override
     public BloodSugarResponse getById(Long id) {
         final var bloodSugar = findBloodSugarById(id);
-        final BloodSugarResponse bloodSugarResponse = bloodSugarMapper.BloodSugarToBloodSugarResponse(bloodSugar);
+        final BloodSugarResponse bloodSugarResponse = bloodSugarMapper.bloodSugarToBloodSugarResponse(bloodSugar);
         return bloodSugarResponse;
     }
 

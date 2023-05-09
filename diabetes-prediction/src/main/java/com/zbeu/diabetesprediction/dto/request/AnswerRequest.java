@@ -16,7 +16,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@ApiModel(value = "Advice Request")
+@ApiModel(value = "Answer Request")
 public final class AnswerRequest {
 
     @ApiModelProperty(value = "Reply")

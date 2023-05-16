@@ -48,7 +48,7 @@ public class UserServiceImpl implements UserService {
                     .orElseThrow(() -> new CustomException(ExceptionMessages.USER_NOT_FOUND, HttpStatus.NOT_FOUND));
 
             authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(username, password));
-            final String token = jwtTokenProvider.createToken(username, user.getRole());
+            final String token = jwtTokenProvider.createToken(username, user.getRole(), user.getId());
             return new LoginResponse(token);
         } catch (AuthenticationException authenticationException) {
             throw new CustomException(ExceptionMessages.INVALID_USERNAME_OR_PASSWORD_SUPPLIED, HttpStatus.UNPROCESSABLE_ENTITY);
